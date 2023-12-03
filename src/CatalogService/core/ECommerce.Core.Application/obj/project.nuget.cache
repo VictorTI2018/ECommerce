@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "HmKsy/YKeILbWets9CM/uZ5ascfyopnZn9llKhD5OlMpGzGUH/hpAeWRTDr0NjCUuaQUTubAcbsyaWBOdPzVgA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\ECommerce\\src\\CatalogService\\core\\ECommerce.Core.Application\\ECommerce.Core.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Victor Silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://nuget.ecs.com.br/api/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
+}

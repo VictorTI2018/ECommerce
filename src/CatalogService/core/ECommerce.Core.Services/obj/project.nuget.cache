@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "lMxbssI/fURKedEr9AiuuAU56IRnvWP8RkXJa910ScXT6QLXt+NPUiGoMqLBIWRrbDlsugq+F/FgcJ+5RHeYBA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Victor Silva\\OneDrive - Verity\\Documentos\\Victor\\Estudos\\ECommerce\\src\\CatalogService\\core\\ECommerce.Core.Services\\ECommerce.Core.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Victor Silva\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
+    "C:\\Users\\Victor Silva\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://nuget.ecs.com.br/api/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
+}
