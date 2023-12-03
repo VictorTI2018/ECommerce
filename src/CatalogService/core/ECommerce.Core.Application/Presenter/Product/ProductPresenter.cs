@@ -18,6 +18,9 @@ namespace ECommerce.Core.Application.Presenter.Product
             _unitOfWork = unitOfWork;
         }
 
+        public async Task<PresenterResponse> GetAllByCategory(int categoryId) 
+            => new PresenterResponse("", true, await _productService.GetAllByCategory(categoryId));
+
         public async Task<PresenterResponse> SaveAsync(ProductCreateRequest request)
         {
             try

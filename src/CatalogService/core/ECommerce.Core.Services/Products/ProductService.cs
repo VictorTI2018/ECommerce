@@ -15,6 +15,9 @@ namespace ECommerce.Core.Services.Products
             _productRepository = produtoRepository;
         }
 
+        public async Task<IEnumerable<ProdutoEntity>> GetAllByCategory(int categoryId)
+            => await _productRepository.GetAllByExpressionAsync(p => p.CategoryId.Equals(categoryId)); 
+
         public async Task<ServiceResponse> SaveAsync(ProdutoEntity entity)
         {
             try

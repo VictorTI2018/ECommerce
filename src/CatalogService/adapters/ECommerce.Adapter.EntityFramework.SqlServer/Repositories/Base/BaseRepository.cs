@@ -16,12 +16,18 @@ namespace ECommerce.Adapter.EntityFramework.SqlServer.Repositories.Base
             _context = context;
         }
 
-        public async Task<bool> ExistsAsync(Expression<Func<T, bool>> expression) => await _context.Set<T>().AnyAsync(expression); 
+        public async Task<IEnumerable<T>> GetAllByExpressionAsync(Expression<Func<T, bool>> expression) 
+            => await _context.Set<T>().Where(expression).ToListAsync();
+
+        public async Task<bool> ExistsAsync(Expression<Func<T, bool>> expression)
+            => await _context.Set<T>().AnyAsync(expression); 
 
         public async Task<T> AddAsync(T entity)
         {
             try
             {
+                entity.Created ??= DateTime.Now;
+
                 return (await _context.Set<T>().AddAsync(entity)).Entity;
             }catch(Exception ex)
             {

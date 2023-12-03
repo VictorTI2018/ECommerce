@@ -22,5 +22,30 @@
             <param name="request"></param>
             <returns></returns>
         </member>
+        <member name="T:ECommerce.API.Controllers.V1.ProductsController">
+            <summary>
+            Controller para gerenciar ações de [Produtos]
+            </summary>
+        </member>
+        <member name="M:ECommerce.API.Controllers.V1.ProductsController.#ctor(ECommerce.Core.Application.Presenter.Product.IProductPresenter)">
+            <summary>
+            Construtor padrão
+            </summary>
+            <param name="productPresenter"></param>
+        </member>
+        <member name="M:ECommerce.API.Controllers.V1.ProductsController.Get(System.Int32)">
+            <summary>
+            Listar todos os produtos por categoria
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ECommerce.API.Controllers.V1.ProductsController.Post(ECommerce.Core.Application.Request.Product.ProductCreateRequest)">
+            <summary>
+            Cadastrar um novo produto
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

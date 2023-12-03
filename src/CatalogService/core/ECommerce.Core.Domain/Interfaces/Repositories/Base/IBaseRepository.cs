@@ -9,5 +9,7 @@ namespace ECommerce.Core.Domain.Interfaces.Repositories.Base
         Task<T> AddAsync(T entity);
 
         Task<bool> ExistsAsync(Expression<Func<T, bool>> expression);
+
+        Task<IEnumerable<T>> GetAllByExpressionAsync(Expression<Func<T, bool>> expression);
     }
 }
